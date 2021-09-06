@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    
+    <title>Calculator</title>
+</head>
+
+<body>
+
+    <div class="app_name">
+        
+    </div>
+
+    <div class="container">
+        <h1>Calculator</h1>
+        <div class="calculator">
+
+            <div class="display">
+                <h1 id="input">0</h1>
+            </div>
+
+            <div class="buttons">
+
+                <div class="row">
+                    <button class="first" id="all_clear" onclick='clsall()'>AC</button>
+                    <button class="first" id="clear" onclick='clr()'>C</button>
+                    <button class="first" id="%">%</button>
+                    <button class="sign" id="/" value="/" onclick="display(id)">&#247</button>
+                </div>
+
+                <div class="row">
+                    <button class="num" id="7" value="7" onclick="display(id)">7</button>
+                    <button class="num" id="8" value="8" onclick="display(id)">8</button>
+                    <button class="num" id="9" value="9" onclick="display(id)">9</button>
+                    <button class="sign" id="x" value="*" onclick="display(id)">&#215</button>
+                </div>
+
+                <div class="row">
+                    <button class="num" id="4" value="4" onclick="display(id)">4</button>
+                    <button class="num" id="5" value="5" onclick="display(id)">5</button>
+                    <button class="num" id="6" value="6" onclick="display(id)">6</button>
+                    <button class="sign" id="-" value="-" onclick="display(id)">-</button>
+                </div>
+
+                <div class="row">
+                    <button class="num" id="1" value="1" onclick="display(id)">1</button>
+                    <button class="num" id="2" value="2" onclick="display(id)">2</button>
+                    <button class="num" id="3" value="3" onclick="display(id)">3</button>
+                    <button class="sign" id="+" value="+"onclick="display(id)">+</button>
+                </div>
+
+                <div class="row">
+                    <button class="num" id="zero" value="0" onclick="display(id)">0</button>
+                    <button class="num" id="dot" value="." onclick="display(id)">.</button>
+                    <button class="sign" id="equ" onclick="ans()">=</button>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+<script src="app.js"></script>
+</body>
+
+
+</html>
